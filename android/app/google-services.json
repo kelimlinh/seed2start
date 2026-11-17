@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918737844267",
+    "project_id": "psycapweb",
+    "storage_bucket": "psycapweb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918737844267:android:80009f9df9ba311123926e",
+        "android_client_info": {
+          "package_name": "com.example.psycapnote_website"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCur23575E2amyDiJDqHfWvy30I6XkDxqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

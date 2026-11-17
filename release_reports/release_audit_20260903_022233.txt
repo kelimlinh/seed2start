@@ -1,0 +1,175 @@
+WEBSITE HƯỚNG DẪN KHỞI NGHIỆP CÙNG MẦM
+PHASE 10A — LOCAL RELEASE AUDIT
+Generated: 9/3/2026 2:22:33 AM
+Project: D:\KIEULINH\NCKH26-27\Website\psycapnote_website
+
+Legend: PASS = good, REVIEW = inspect, FAIL = should fix before release.
+
+============================================================
+1. REQUIRED PROJECT STRUCTURE
+============================================================
+[PASS] lib
+    Present.
+[PASS] functions/index.js
+    Present.
+[PASS] functions/package.json
+    Present.
+[PASS] web/index.html
+    Present.
+[PASS] pubspec.yaml
+    Present.
+[PASS] firebase.json
+    Present.
+[PASS] firestore.rules
+    Present.
+
+============================================================
+2. BRANDING SWEEP
+============================================================
+[REVIEW] Old brand search
+    14 occurrence(s). Internal names such as package/class identifiers may remain; user-facing strings should not.
+    - lib\main.dart:12: runApp(const PsyCapNoteApp());
+    - lib\app\app.dart:9: class PsyCapNoteApp extends StatelessWidget {
+    - lib\app\app.dart:10: const PsyCapNoteApp({super.key});
+    - lib\features\home\presentation\app_shell.dart:166: 'PsyCapNote',
+    - lib\features\home\presentation\app_shell.dart:207: 'PsyCapNote × Mầm 🌱',
+    - lib\features\workbook\presentation\access_code_page.dart:93: title: const Text('PsyCapNote'),
+    - lib\features\workbook\presentation\workbook_media_embed_stub.dart:58: ? 'This media can be played directly on the web version of PsyCapNote.'
+    - lib\features\workbook\presentation\workbook_media_embed_stub.dart:59: : 'Nội dung media này có thể phát trực tiếp trên phiên bản web của PsyCapNote.',
+    - lib\features\workbook\presentation\workbook_media_embed_web.dart:50: 'psycapnote-media-${widget.block.blockId}-${_nextViewId++}';
+    - lib\features\workbook\presentation\workbook_public_resource_page.dart:34: title: const Text('PsyCapNote'),
+    - functions\index.js:550: 'Never call yourself PsyCapNote AI, ChatGPT, a therapist, or a doctor.',
+    - functions\package-lock.json:2: "name": "psycapnote-functions",
+    - functions\package-lock.json:7: "name": "psycapnote-functions",
+    - functions\package.json:2: "name": "psycapnote-functions",
+[PASS] Flutter web placeholders
+    No default web placeholder metadata found.
+
+============================================================
+3. LOCALIZATION PARITY
+============================================================
+[PASS] VI/EN parity
+    222 localization member(s) implemented in both languages.
+[PASS] Vietnamese app name
+    Current official website brand detected.
+[PASS] English app name
+    English display name detected.
+
+============================================================
+4. MẦM AI RELEASE MARKERS
+============================================================
+[PASS] Mầm persona
+    Detected in functions/index.js.
+[PASS] Context Firestore resolution
+    Detected in functions/index.js.
+[PASS] MAX_TOKENS handling
+    Detected in functions/index.js.
+[PASS] Automatic truncation retry
+    Detected in functions/index.js.
+[PASS] Output budget
+    Detected in functions/index.js.
+[PASS] Legacy AI persona
+    No legacy AI persona marker.
+[PASS] Thinking state
+    Detected.
+[PASS] Clear confirmation
+    Detected.
+[PASS] Auto-scroll
+    Detected.
+[PASS] Contextual AI header
+    Detected.
+[PASS] Failed-send protection
+    Provider reply occurs before paired message persistence.
+[PASS] Context thread isolation
+    AiLaunchContext conversationId detected.
+
+============================================================
+5. ROUTING + PUBLIC QR
+============================================================
+[PASS] Exact initial route generation
+    Detected.
+[PASS] Public resource route
+    Detected.
+[PASS] Access-code route
+    Detected.
+[PASS] Contextual AI scope
+    Detected.
+
+============================================================
+6. FIRESTORE RULES MARKERS
+============================================================
+[PASS] AI conversations
+    Rule marker detected.
+[PASS] Workbook progress
+    Rule marker detected.
+[PASS] Reflections
+    Rule marker detected.
+[PASS] Goals
+    Rule marker detected.
+[PASS] Access codes
+    Rule marker detected.
+
+============================================================
+7. PWA + WEB METADATA
+============================================================
+[PASS] UTF-8 meta
+    Detected.
+[PASS] Official page title
+    Detected.
+[PASS] Theme color
+    Detected.
+[PASS] Web description
+    Detected.
+[PASS] PWA name
+    Website hướng dẫn khởi nghiệp cùng Mầm
+[PASS] PWA short name
+    Cùng Mầm
+[PASS] PWA display mode
+    standalone
+
+============================================================
+8. ASSET AUDIT
+============================================================
+[PASS] Assets found
+    11 file(s), 3.87 MB total.
+[REVIEW] Large assets
+    1 asset(s) larger than 700 KB.
+    - assets\mascot\mam_congratulation.webp (742 KB)
+[PASS] Mascot inventory
+    11 mascot asset(s).
+[REVIEW] Mascot formats
+    1 mascot file(s) are not WebP. Keep source originals only if intentionally needed at runtime.
+
+============================================================
+9. DEVELOPMENT LEFTOVERS
+============================================================
+[PASS] Search: localhost
+    No occurrence.
+[PASS] Search: 127.0.0.1
+    No occurrence.
+[REVIEW] Search: TODO
+    1 occurrence(s).
+    - lib\features\goals\presentation\goals_page.dart:768: value: _progress.toDouble(),
+[PASS] Search: FIXME
+    No occurrence.
+
+============================================================
+10. RELEASE HARNESS
+============================================================
+[PASS] docs/AI_QUALITY_TEST_MATRIX.md
+    Present.
+[PASS] docs/AI_QUALITY_TEST_RESULTS_TEMPLATE.md
+    Present.
+[PASS] docs/RELEASE_CHECKLIST.md
+    Present.
+[PASS] docs/DEMO_FLOW_5_MIN.md
+    Present.
+
+============================================================
+SUMMARY
+============================================================
+PASS:   3
+REVIEW: 1
+FAIL:   1
+
+Blocking audit findings exist. Fix FAIL items before production release.

@@ -1,0 +1,561 @@
+import 'app_localizations.dart';
+
+class AppLocalizationsEn extends AppLocalizations {
+  const AppLocalizationsEn(super.locale);
+
+  @override
+  String get appName => 'Entrepreneurship Guide with Mầm';
+  @override
+  String get welcome => 'Welcome';
+  @override
+  String get login => 'Sign in';
+  @override
+  String get register => 'Create account';
+  @override
+  String get email => 'Email';
+  @override
+  String get password => 'Password';
+  @override
+  String get name => 'Your name';
+  @override
+  String get forgotPassword => 'Forgot password?';
+  @override
+  String get noAccount => 'Don’t have an account?';
+  @override
+  String get haveAccount => 'Already have an account?';
+  @override
+  String get logout => 'Sign out';
+  @override
+  String get home => 'Home';
+  @override
+  String get invalidEmail => 'Invalid email.';
+  @override
+  String get weakPassword => 'Password must contain at least 6 characters.';
+  @override
+  String get wrongCredentials => 'Email or password is incorrect.';
+  @override
+  String get emailUsed => 'This email is already in use.';
+  @override
+  String get somethingWrong => 'Something went wrong. Please try again.';
+  @override
+  String get language => 'Language';
+  @override
+  String get vietnamese => 'Tiếng Việt';
+  @override
+  String get english => 'English';
+  @override
+  String get loginSubtitle => 'Continue your own journey.';
+  @override
+  String get createYourAccount => 'Create an account';
+  @override
+  String get registerSubtitle => 'Start with a few basic details.';
+  @override
+  String get confirmPassword => 'Confirm password';
+  @override
+  String get showPassword => 'Show password';
+  @override
+  String get hidePassword => 'Hide password';
+  @override
+  String get emailRequired => 'Please enter your email.';
+  @override
+  String get passwordRequired => 'Please enter your password.';
+  @override
+  String get nameRequired => 'Please enter your name.';
+  @override
+  String get passwordsDoNotMatch => 'The passwords do not match.';
+  @override
+  String get enterEmailToReset => 'Enter a valid email to reset your password.';
+  @override
+  String get resetEmailSent =>
+      'Password reset instructions have been sent by email.';
+  @override
+  String get tooManyRequests => 'Too many attempts. Please try again later.';
+  @override
+  String get registrationUnavailable =>
+      'Account creation is currently unavailable. Please try again later.';
+
+  @override
+  String get hello => 'Hi there 👋';
+  @override
+  String helloName(String name) => 'Hi, $name 🌱';
+  @override
+  String get homeSubtitle => 'Shall we take one small step today?';
+  @override
+  String get today => 'Today';
+  @override
+  String get dailyFocusTitle => 'You do not need to move fast.';
+  @override
+  String get dailyFocusBody =>
+      'Just choose one small thing you would like to do a little better today.';
+  @override
+  String get yourSpace => 'Your space';
+  @override
+  String get journey => 'Journey';
+  @override
+  String get workbook => 'Workbook';
+  @override
+  String get me => 'You';
+  @override
+  String get goals => 'Goals';
+  @override
+  String get reflection => 'Reflection';
+  @override
+  String get journeySummary =>
+      'See where you are in the three-chapter journey.';
+  @override
+  String get goalsSummary => 'The things you want to move closer to.';
+  @override
+  String get reflectionSummary => 'Notice your feelings and what you learned.';
+  @override
+  String get workbookSummary =>
+      'Three chapters, fourteen lessons, and their companion activities.';
+  @override
+  String get gentleReminder =>
+      'You do not need to be perfect. What matters is that you are still moving forward.';
+  @override
+  String get moduleComingSoon =>
+      'This area will be connected in the next development step.';
+  @override
+  String get homeContinueJourney => 'Continue your journey';
+  @override
+  String get homeJourneyComplete => 'You have completed all 14 lessons 🌱';
+  @override
+  String get homeThreeChapters => 'Your three stages';
+  @override
+  String get homeMeetMam => 'Meet Mầm';
+  @override
+  String get homeMamBody =>
+      'When you need to untangle a thought, break down a goal, or reflect on an experience, Mầm can think it through with you.';
+  @override
+  String get continueJourney => 'Continue';
+  @override
+  String get openWorkbook => 'Open my workbook';
+
+  @override
+  String get addGoal => 'Add goal';
+  @override
+  String get goalsPageSubtitle =>
+      'Choose something you genuinely want to move toward, then start with a manageable step.';
+  @override
+  String get activeGoals => 'In progress';
+  @override
+  String get completedGoals => 'Completed';
+  @override
+  String get inProgress => 'In progress';
+  @override
+  String get done => 'Done';
+  @override
+  String get noGoalsYet => 'No goals yet';
+  @override
+  String get noGoalsBody =>
+      'Start with one small, clear goal that feels right for you.';
+  @override
+  String get createFirstGoal => 'Create your first goal';
+  @override
+  String get newGoal => 'New goal';
+  @override
+  String get editGoal => 'Edit goal';
+  @override
+  String get goalTitle => 'What would you like to achieve?';
+  @override
+  String get goalTitleHint => 'For example: Finish this week’s presentation';
+  @override
+  String get goalDescription => 'Notes';
+  @override
+  String get goalDescriptionHint =>
+      'A few steps or reasons why this goal matters to you.';
+  @override
+  String get goalTimeframe => 'Timeframe';
+  @override
+  String get shortTerm => 'Short term';
+  @override
+  String get longTerm => 'Long term';
+  @override
+  String get progress => 'Progress';
+  @override
+  String get createGoal => 'Create goal';
+  @override
+  String get saveChanges => 'Save changes';
+  @override
+  String get goalTitleRequired => 'Write a goal before saving.';
+  @override
+  String get goalCreated => 'Goal created.';
+  @override
+  String get goalUpdated => 'Goal updated.';
+  @override
+  String get goalActions => 'Goal options';
+  @override
+  String get delete => 'Delete';
+  @override
+  String get deleteGoal => 'Delete goal?';
+  @override
+  String get deleteGoalConfirm =>
+      'This goal will be removed from your journey.';
+  @override
+  String get goalsLoadError => 'Could not load goals';
+  @override
+  String get tryAgainLater =>
+      'Please check your connection and try again later.';
+
+  @override
+  String get journeyTitle => 'My Journey';
+  @override
+  String get journeyPageSubtitle =>
+      'Follow the workbook’s three chapters and the inner resources you are practicing along the way.';
+  @override
+  String get yourHeroProgress => 'Workbook progress';
+  @override
+  String journeyProgressText(int completed, int total) =>
+      '$completed/$total lessons completed';
+  @override
+  String get heroTitle => 'Four resources you are practicing';
+  @override
+  String get heroSubtitle =>
+      'HERO activities remain a practice layer that supports the workbook, not a separate curriculum.';
+  @override
+  String get hope => 'Hope';
+  @override
+  String get hopeSubtitle =>
+      'Know where you want to go and find more than one way forward.';
+  @override
+  String get selfEfficacy => 'Self-efficacy';
+  @override
+  String get selfEfficacySubtitle =>
+      'Trust your ability to learn, try, and complete manageable tasks.';
+  @override
+  String get resilience => 'Resilience';
+  @override
+  String get resilienceSubtitle =>
+      'Recover, adjust, and continue after something does not go as planned.';
+  @override
+  String get optimism => 'Optimism';
+  @override
+  String get optimismSubtitle =>
+      'Look ahead with a realistic but positive perspective.';
+  @override
+  String get smallActivities => 'Small activities';
+  @override
+  String get hopeActivityOneTitle => 'One very small goal';
+  @override
+  String get hopeActivityOneBody =>
+      'Choose something you want to finish in the next few days and identify the first step you can take now.';
+  @override
+  String get hopeActivityTwoTitle => 'Find another path';
+  @override
+  String get hopeActivityTwoBody =>
+      'Think of a goal that feels stuck and write down at least one different way to keep moving.';
+  @override
+  String get efficacyActivityOneTitle => 'Evidence that I can';
+  @override
+  String get efficacyActivityOneBody =>
+      'Recall something that once felt difficult but you learned or completed. Notice what helped you do it.';
+  @override
+  String get efficacyActivityTwoTitle => 'Stretch a little';
+  @override
+  String get efficacyActivityTwoBody =>
+      'Choose something slightly outside your comfort zone that is still safe and manageable, then take one small step.';
+  @override
+  String get resilienceActivityOneTitle => 'A recovery plan';
+  @override
+  String get resilienceActivityOneBody =>
+      'After something does not go well, decide what you can rest, adjust, or ask for help with before continuing.';
+  @override
+  String get resilienceActivityTwoTitle => 'Try again differently';
+  @override
+  String get resilienceActivityTwoBody =>
+      'Choose something you did not do as well as you wanted and identify one specific change for your next attempt.';
+  @override
+  String get optimismActivityOneTitle => 'Reframe the situation';
+  @override
+  String get optimismActivityOneBody =>
+      'For something discouraging you, find a more balanced view: what is difficult, and what can still improve?';
+  @override
+  String get optimismActivityTwoTitle => 'Notice a good possibility';
+  @override
+  String get optimismActivityTwoBody =>
+      'Think about the coming week and notice one positive outcome that could happen if you actively do your part.';
+  @override
+  String get markActivityComplete => 'Mark as completed';
+  @override
+  String get markActivityIncomplete => 'Mark as not completed';
+  @override
+  String get journeyLoadError =>
+      'Progress could not be synced. Try again when your connection is more stable.';
+
+  @override
+  String get reflectionPageSubtitle =>
+      'A small space to notice how you feel and keep what is on your mind.';
+  @override
+  String get howAreYouToday => 'How are you feeling today?';
+  @override
+  String get moodPrompt =>
+      'Choose the option closest to how you feel right now.';
+  @override
+  String get moodVeryLow => 'Very low';
+  @override
+  String get moodLow => 'A bit low';
+  @override
+  String get moodOkay => 'Okay';
+  @override
+  String get moodGood => 'Pretty good';
+  @override
+  String get moodGreat => 'Great';
+  @override
+  String get moodLoadError => 'We could not load today’s check-in yet.';
+  @override
+  String get recentReflections => 'Recent reflections';
+  @override
+  String get addReflection => 'Write more';
+  @override
+  String get writeReflection => 'Reflect on today';
+  @override
+  String get editReflection => 'Edit reflection';
+  @override
+  String get reflectionPrompt =>
+      'Is there anything from today you want to keep for yourself?';
+  @override
+  String get reflectionHint =>
+      'For example: something you did well, something you noticed, or something you want to try differently...';
+  @override
+  String get reflectionRequired => 'Write a few words before saving.';
+  @override
+  String get saveReflection => 'Save reflection';
+  @override
+  String get reflectionSaved => 'Your reflection has been saved.';
+  @override
+  String get reflectionUpdated => 'Your reflection has been updated.';
+  @override
+  String get reflectionLoadError =>
+      'We could not load your previous reflections yet.';
+  @override
+  String get noReflectionsYet => 'No reflections yet';
+  @override
+  String get noReflectionsBody =>
+      'It does not need to be long. A few honest lines are enough to begin.';
+  @override
+  String get reflectionActions => 'Reflection options';
+  @override
+  String get deleteReflection => 'Delete reflection?';
+  @override
+  String get deleteReflectionConfirm =>
+      'This entry will be removed from your private space.';
+  @override
+  String get justNow => 'Just saved';
+
+  @override
+  String get workbookPageSubtitle =>
+      'Three chapters and fourteen lessons, aligned with the printed workbook so you always know where you are in the journey.';
+  @override
+  String get workbookYourProgress => 'Workbook progress';
+  @override
+  String workbookChapterNumber(int number) => 'Chapter $number';
+  @override
+  String workbookChapterProgressText(int completed, int total) =>
+      '$completed/$total lessons completed';
+  @override
+  String workbookProgressText(int completed, int total) =>
+      '$completed/$total lessons completed';
+  @override
+  String workbookSectionTitle(String sectionId) => switch (sectionId) {
+        'chapter_01' => 'Chapter I — My Present and Future',
+        'chapter_02' => 'Chapter II — Nurturing Inner Strength',
+        'chapter_03' => 'Chapter III — From Ideas to Action',
+        _ => 'Workbook',
+      };
+  @override
+  String workbookLessonTitle(String lessonId) => switch (lessonId) {
+        'lesson_01' => 'Locate Your Personal Coordinates',
+        'lesson_02' => 'Seeds of the Future',
+        'lesson_03' => 'Discover Psychological Capital',
+        'lesson_04' => 'Hope',
+        'lesson_05' => 'Self-efficacy',
+        'lesson_06' => 'Resilience',
+        'lesson_07' => 'Optimism',
+        'lesson_08' => 'From Psychological Capital to Entrepreneurial Thinking',
+        'lesson_09' => 'Spot Opportunities in Familiar Things',
+        'lesson_10' => 'Creative Thinking',
+        'lesson_11' => 'Problem Solving',
+        'lesson_12' => 'Turn an Idea into a Plan',
+        'lesson_13' => 'Experiment to Learn',
+        'lesson_14' => 'How Does an Idea Create Value?',
+        _ => 'Workbook lesson',
+      };
+  @override
+  String workbookLessonSummary(String lessonId) => switch (lessonId) {
+        'lesson_01' => 'Explore yourself from more than one angle.',
+        'lesson_02' => 'Imagine what you want to grow for your future.',
+        'lesson_03' => 'Meet the four resources of Psychological Capital.',
+        'lesson_04' => 'Choose a goal and explore multiple pathways forward.',
+        'lesson_05' =>
+          'Build confidence from evidence that you can learn and do.',
+        'lesson_06' => 'Reflect, adjust, and return after a setback.',
+        'lesson_07' =>
+          'Keep a realistic view while noticing room for improvement.',
+        'lesson_08' =>
+          'Connect inner resources with initiative and value creation.',
+        'lesson_09' => 'Notice needs and opportunities in everyday life.',
+        'lesson_10' => 'Generate multiple solutions before choosing one.',
+        'lesson_11' =>
+          'Make a problem smaller and choose a workable next step.',
+        'lesson_12' => 'Turn an idea into steps you can actually start.',
+        'lesson_13' => 'Test small, gather feedback, and adjust.',
+        'lesson_14' => 'View an idea through the value it creates for others.',
+        _ => 'Continue with the printed workbook.',
+      };
+  @override
+  String workbookLessonNumber(int number) => 'Lesson $number';
+  @override
+  String get workbookDigitalCompanion => 'Mầm is with you';
+  @override
+  String workbookCompanionPrompt(String lessonId) =>
+      'Continue the digital activity that supports this lesson, then return to the workbook to write and reflect.';
+  @override
+  String workbookOpenLinkedActivity(String lessonId) => switch (lessonId) {
+        'lesson_03' || 'lesson_05' || 'lesson_08' => 'Open Journey',
+        'lesson_02' || 'lesson_04' || 'lesson_12' => 'Open Goals',
+        'lesson_01' ||
+        'lesson_06' ||
+        'lesson_07' ||
+        'lesson_11' ||
+        'lesson_13' =>
+          'Open Reflection',
+        _ => 'Open related activity',
+      };
+  @override
+  String get workbookAskMam => 'Ask Mầm';
+  @override
+  String get workbookReturnToBook => 'Return to the workbook';
+  @override
+  String get workbookReturnToBookBody =>
+      'The website extends the experience. After the digital part, continue the writing and reflection in your printed workbook.';
+  @override
+  String get workbookMarkComplete => 'Mark as completed';
+  @override
+  String get workbookMarkIncomplete => 'Mark as not completed';
+  @override
+  String get workbookLoadError =>
+      'Workbook progress could not be synced. Try again when your connection is more stable.';
+  @override
+  String get workbookLessonNotFound =>
+      'This workbook lesson could not be found.';
+  @override
+  String get workbookQrLink => 'QR link path';
+  @override
+  String get copy => 'Copy';
+  @override
+  String get copied => 'Link copied.';
+
+  @override
+  String get progressSpace => 'Your progress';
+  @override
+  String get progressPageSubtitle =>
+      'Not to get ahead of anyone else — just to help you notice the small steps you have taken.';
+  @override
+  String levelNumber(int level) => 'Level $level';
+  @override
+  String totalXp(int xp) => '$xp XP collected';
+  @override
+  String xpToNextLevel(int xp) => '$xp XP to the next level';
+  @override
+  String get currentStreak => 'Current streak';
+  @override
+  String get badgesEarned => 'Badges earned';
+  @override
+  String get yourBadges => 'Your milestones';
+  @override
+  String get howXpWorks => 'How do you earn XP?';
+  @override
+  String get earned => 'Earned';
+  @override
+  String get notYet => 'Locked';
+  @override
+  String get badgeFirstStep => 'First step';
+  @override
+  String get badgeFirstStepBody => 'Complete your first activity with Mầm.';
+  @override
+  String get badgeLevelTwo => 'Seedling';
+  @override
+  String get badgeLevelTwoBody => 'Reach level 2 through your own small steps.';
+  @override
+  String get badgeLevelFour => 'Growing';
+  @override
+  String get badgeLevelFourBody =>
+      'Reach level 4 and keep your growth journey going.';
+  @override
+  String get badgeStreakThree => 'Three steady days';
+  @override
+  String get badgeStreakThreeBody =>
+      'Do something meaningful for 3 days in a row.';
+  @override
+  String get badgeStreakSeven => 'One steady week';
+  @override
+  String get badgeStreakSevenBody =>
+      'Do something meaningful for 7 days in a row.';
+  @override
+  String get rewardMood => 'Check in with your mood today';
+  @override
+  String get rewardReflection => 'Write one Reflection during the day';
+  @override
+  String get rewardJourney => 'Complete one HERO activity';
+  @override
+  String get rewardWorkbook => 'Complete one Workbook companion lesson';
+  @override
+  String get rewardGoal => 'Complete one goal';
+  @override
+  String get gamificationLoadError =>
+      'Your progress could not be synced right now. You can still continue your main activities normally.';
+  @override
+  String get personalProgress => 'Personal progress';
+  @override
+  String streakDays(int days) => '$days days in a row';
+
+  @override
+  String get aiCoach => 'Mầm';
+  @override
+  String get aiHomeSummary =>
+      'Think through what is on your mind and find one small next step together.';
+  @override
+  String get aiGreeting => 'Mầm is here with you 🌱';
+  @override
+  String get aiSubtitle =>
+      'Choose a prompt or share what is on your mind. Mầm will stay focused on what you are working on, guide your reflection, and help you find one small next step without doing the thinking for you.';
+  @override
+  String get aiPromptGoal => 'I want to set a goal';
+  @override
+  String get aiPromptReflection => 'I want to reflect on today';
+  @override
+  String get aiPromptDifficulty => "I'm facing a difficulty";
+  @override
+  String get aiPromptStrengths => 'I want to understand my strengths';
+  @override
+  String get aiEmpty =>
+      'This conversation is your private space. Start with one small thing that has been on your mind.';
+  @override
+  String get aiInputHint => "What's on your mind?";
+  @override
+  String get aiError => 'Mầm cannot respond right now. Please try again later.';
+  @override
+  String get aiClearConversation => 'Clear conversation';
+
+  @override
+  String get profile => 'Profile';
+  @override
+  String get profileSubtitle => 'A personal space that belongs to you.';
+  @override
+  String get student => 'Student';
+  @override
+  String get editName => 'Edit display name';
+  @override
+  String get save => 'Save';
+  @override
+  String get cancel => 'Cancel';
+  @override
+  String get profileUpdated => 'Profile updated.';
+  @override
+  String get privacy => 'Privacy';
+  @override
+  String get privateByDefault => 'Private by default';
+  @override
+  String get privacyDescription =>
+      'Your profile and personal data are for your account only. The website does not create public rankings from personal data.';
+}

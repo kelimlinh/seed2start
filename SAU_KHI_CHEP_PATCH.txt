@@ -1,0 +1,44 @@
+PSYCAPNOTE — VERTEX AI DEPLOY TIMEOUT FIX
+
+Lỗi xử lý:
+User code failed to load. Cannot determine backend specification.
+Timeout after 10000.
+
+Nguyên nhân:
+@google/genai được import/khởi tạo ở global scope, khiến Firebase CLI phải tải SDK
+trong lúc discovery function. Firebase khuyến nghị dùng onInit() cho phần khởi tạo
+có thể làm deployment discovery chậm.
+
+CÁCH DÙNG
+1. Copy file:
+   functions/index.js
+   vào:
+   psycapnote_website/functions/index.js
+   và chọn Replace.
+
+2. Mở terminal ở root project:
+   cd functions
+   npm install
+   node --check index.js
+   cd ..
+
+3. Deploy:
+   firebase deploy --only functions
+
+4. Khi thấy Deploy complete!, refresh website bằng Ctrl + Shift + R.
+   Đăng nhập và thử PsyCapNote AI.
+
+Không cần:
+- tạo lại API key
+- tạo lại GEMINI_API_KEY secret
+- đổi IAM role
+- bật lại Vertex AI API
+- sửa Flutter
+
+Nếu deploy vẫn timeout, tạm tăng discovery timeout:
+PowerShell:
+   $env:FUNCTIONS_DISCOVERY_TIMEOUT="30"
+   firebase deploy --only functions
+
+Sau khi deploy xong có thể xóa biến trong terminal hiện tại bằng:
+   Remove-Item Env:FUNCTIONS_DISCOVERY_TIMEOUT

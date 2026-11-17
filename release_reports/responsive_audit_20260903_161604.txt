@@ -1,0 +1,58 @@
+WEBSITE HƯỚNG DẪN KHỞI NGHIỆP CÙNG MẦM
+PHASE 10C — RESPONSIVE STATIC AUDIT
+Generated: 9/3/2026 4:16:04 PM
+
+============================================================
+1. RESPONSIVE PRIMITIVES
+============================================================
+[INFO] ConstrainedBox: 17
+[INFO] Expanded: 57
+[INFO] Flexible: 4
+[INFO] LayoutBuilder: 5
+[INFO] ListView: 3
+[INFO] MediaQuery: 2
+[INFO] SingleChildScrollView: 11
+[INFO] Wrap: 5
+
+============================================================
+2. LARGE FIXED-DIMENSION REVIEW
+============================================================
+These are not automatically bugs; inspect only on responsive screens.
+[PASS] No obviously risky large fixed dimensions detected.
+
+============================================================
+3. ROW HOTSPOTS
+============================================================
+[REVIEW] lib\features\goals\presentation\goals_page.dart — Row x9
+[REVIEW] lib\features\home\presentation\home_page.dart — Row x8
+[REVIEW] lib\features\workbook\presentation\workbook_resource_section.dart — Row x8
+[REVIEW] lib\features\ai\presentation\ai_page.dart — Row x6
+
+============================================================
+4. TEXT HOTSPOTS
+============================================================
+[INFO] maxLines 1–2 occurrence(s): 5
+    - lib\features\journey\presentation\journey_page.dart:470: maxLines: 2,
+    - lib\features\profile\presentation\profile_page.dart:332: maxLines: 1,
+    - lib\features\profile\presentation\profile_page.dart:342: maxLines: 1,
+    - lib\features\reflection\presentation\reflection_page.dart:335: maxLines: 1,
+    - lib\features\workbook\presentation\workbook_page.dart:319: maxLines: 2,
+
+============================================================
+5. MASCOT RESPONSIVE MARKERS
+============================================================
+[PASS] Mầm uses BoxFit.contain.
+[PASS] Mầm semantics marker detected.
+
+============================================================
+6. REQUIRED MANUAL VIEWPORT MATRIX
+============================================================
+360 x 800
+390 x 844
+768 x 1024
+1024 x 768
+1366 x 768
+1440 x 900
+
+Test both Vietnamese and English.
+Use docs/RESPONSIVE_TEST_MATRIX.md to record PASS/FAIL.

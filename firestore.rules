@@ -1,0 +1,78 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+
+    match /accessCodes/{code} {
+      // Access codes only map a printed 6-digit code to a public resource.
+      // Exact document lookup is public; enumerating the collection is denied.
+      allow get: if true;
+      allow list: if false;
+      allow create, update, delete: if false;
+    }
+
+    match /resources/{resourceId} {
+      allow read: if resource.data.published == true;
+      allow create, update, delete: if false;
+
+      match /blocks/{blockId} {
+        allow read: if get(
+          /databases/$(database)/documents/resources/$(resourceId)
+        ).data.published == true;
+        allow create, update, delete: if false;
+      }
+    }
+
+    match /users/{userId} {
+      allow read, create, update, delete:
+        if request.auth != null && request.auth.uid == userId;
+
+      match /goals/{goalId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /journeyProgress/{documentId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /moods/{moodId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /reflections/{reflectionId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /workbookProgress/{lessonId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+
+      match /gamification/{documentId} {
+        allow read, create, update:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /gamificationEvents/{eventId} {
+        allow read, create:
+          if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /aiConversations/{conversationId} {
+        allow read, create, update, delete:
+          if request.auth != null && request.auth.uid == userId;
+
+        match /messages/{messageId} {
+          allow read, create, delete:
+            if request.auth != null && request.auth.uid == userId;
+        }
+      }
+    }
+  }
+}

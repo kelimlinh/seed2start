@@ -1,0 +1,43 @@
+{
+    "flutter":  {
+                    "platforms":  {
+                                      "android":  {
+                                                      "default":  {
+                                                                      "projectId":  "psycapweb",
+                                                                      "appId":  "1:918737844267:android:80009f9df9ba311123926e",
+                                                                      "fileOutput":  "android/app/google-services.json"
+                                                                  }
+                                                  },
+                                      "dart":  {
+                                                   "lib/firebase_options.dart":  {
+                                                                                     "projectId":  "psycapweb",
+                                                                                     "configurations":  {
+                                                                                                            "android":  "1:918737844267:android:80009f9df9ba311123926e",
+                                                                                                            "web":  "1:918737844267:web:ae346b4685346e4923926e"
+                                                                                                        }
+                                                                                 }
+                                               }
+                                  }
+                },
+    "functions":  {
+                      "source":  "functions"
+                  },
+    "firestore":  {
+                      "rules":  "firestore.rules"
+                  },
+    "hosting":  {
+                    "target": "mam",
+                    "public":  "build/web",
+                    "ignore":  [
+                                   "firebase.json",
+                                   "**/.*",
+                                   "**/node_modules/**"
+                               ],
+                    "rewrites":  [
+                                     {
+                                         "source":  "**",
+                                         "destination":  "/index.html"
+                                     }
+                                 ]
+                }
+}

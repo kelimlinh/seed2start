@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "psycapweb"
+  },
+  "targets": {
+    "psycapweb": {
+      "hosting": {
+        "mam": [
+          "khoinghiepcungmam"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

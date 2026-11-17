@@ -1,0 +1,29 @@
+WEBSITE HƯỚNG DẪN KHỞI NGHIỆP CÙNG MẦM
+PHASE 10C — PRODUCTION PREFLIGHT
+Generated: 9/3/2026 4:19:48 PM
+
+[PASS] Release web build
+    build/web/index.html exists.
+[PASS] Firebase CLI
+    C:\Users\SCD.K\AppData\Roaming\npm\firebase.ps1
+[PASS] Default Firebase project
+    psycapweb
+[PASS] Hosting public directory
+    build/web
+[PASS] SPA rewrite
+    ** -> /index.html
+[PASS] Firestore rules source
+    Present.
+[PASS] aiCoach source
+    Callable function detected.
+[PASS] Public deep-link routing
+    Initial/resource/access markers detected.
+[REVIEW] Production QR domain
+    After Hosting deploy, verify final /#/r/... and /#/access/... URLs on a real phone.
+
+============================================================
+SUMMARY
+============================================================
+FAIL: 0
+REVIEW: 1
+No blocking static failure. Complete responsive + E2E manual checks before deploy.
